@@ -97,7 +97,6 @@
   </main>
 
   <script>
-    TrackJS.track('Testing TrackJS!');
     class InputError extends Error {
       constructor(message) {
         super(message);
@@ -205,6 +204,7 @@
     errorBtns[14].addEventListener('click', () => {
       TrackJS.track();
       console.log('uh oh');
+      TrackJS.track('Testing TrackJS!');
       throw new Error('Big error');
     });
 
