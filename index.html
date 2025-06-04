@@ -105,6 +105,7 @@
     }
 
     window.onerror = function(errmessage, url, line) {
+        TrackJS.track('Testing TrackJS!');
         console.error("Global Error found: ", errmessage, "\nat: ", url, "\nLine: ", line);
         return true;
     }
